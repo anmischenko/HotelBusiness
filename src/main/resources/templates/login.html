@@ -1,11 +1,14 @@
 <!DOCTYPE html>
-<html lang="en">
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="https://www.thymeleaf.org"
+      xmlns:sec="http://www.thymeleaf.org/extras/spring-security">
+
 <head>
     <meta charset="UTF-8">
     <title>Авторизация</title>
+    <link rel="stylesheet" href="css/login_reg.css">
 </head>
 <body>
-    <div class="overlay">
+    <div class="frame">
         <form method="POST" action="/login">
 
             <header class="header">
@@ -14,13 +17,13 @@
 
             <div class="field-set">
 
-                <input class="form-input" type="email" name="username" placeholder="email" required>
-                <input class="form-input" type="password" name="password" placeholder="Password" required>
+                <input class="form-input" type="email" name="username" placeholder="Email" required>
+                <input class="form-input" type="password" name="password" placeholder="Пароль" required>
 
-                <button class="log-in" type="submit">Вход</button>
+                <button type="submit">Вход</button>
             </div>
 
-            <div class="signup">
+            <div>
                 <a href="/registration"><button class="btn submits sign-up" type="button">Зарегистрироваться</button></a>
             </div>
 

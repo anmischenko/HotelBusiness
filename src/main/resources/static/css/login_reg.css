@@ -1,0 +1,107 @@
+body {
+    background-image: url('/img/hotel.jpg');
+    background-repeat: no-repeat;
+    background-position: right bottom 85%;
+    background-size: cover;
+    font-family: Helvetica;
+}
+
+form {
+    background: #CED1D9;
+    width: 400px;
+    border-radius: 10px;
+    margin: 5% auto;
+    padding: 5%;
+    opacity: .9;
+}
+
+header {
+    text-transform: uppercase;
+    text-align: center;
+}
+
+header h2 {
+    font-size: 150%;
+    color: #353A55;
+}
+
+input[class="form-input"]{
+    width: 390px;
+    height: 50px;
+    margin-top: 5%;
+    padding: 10px;
+    font-size: 18px;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+}
+
+button {
+    display: inline-block;
+    width: 410px;
+    height: 50px;
+    margin-top: 5%;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 18px;
+    outline: none;
+    border: none;
+    text-align: center;
+}
+
+button:hover {
+    transform: translatey(2px);
+    box-shadow: none;
+}
+
+
+
+/*.signup {
+
+/* buttons
+button {
+    display: inline-block;
+    color: #252537;
+
+    width: 270px;
+    height: 50px;
+
+    padding: 0 20px;
+    background: #fff;
+    border-radius: 5px;
+
+    outline: none;
+    border: none;
+
+    cursor: pointer;
+    text-align: center;
+    transition: all 0.2s linear;
+
+    margin: 7% auto;
+    letter-spacing: 0.05em;
+}
+/* Submits
+.submits {
+    width: 100%;
+    display: inline-block;
+    float: left;
+    margin-left: 2%;
+}
+
+/*       Forgot Password button FAF3DD
+.frgt-pass {background: transparent;}
+
+/*     Sign Up button
+.sign-up {background: #B8F2E6;}
+
+
+/* buttons hover
+button:hover {
+    transform: translatey(3px);
+    box-shadow: none;
+}
+
+
+
+
+*/

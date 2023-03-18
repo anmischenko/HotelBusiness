@@ -5,9 +5,10 @@
 <head>
     <meta charset="UTF-8">
     <title>Регистрация</title>
+    <link rel="stylesheet" href="css/login_reg.css">
 </head>
 <body>
-    <div class="signup">
+    <div class="frame">
         <form th:action="@{/registration}" method="POST" modelAttribute="userForm">
 
             <header class="header">
@@ -18,13 +19,13 @@
             <input type="text" name="surname"  class="form-input" placeholder="Фамилия">
             <input type="text" name="patronymic"  class="form-input" placeholder="Отчество">
 <!--            <input type="text" name="email"  class="form-input" placeholder="email">-->
-            <input type="email" name="username"  class="form-input" placeholder="email">
+            <input type="email" name="username"  class="form-input" placeholder="Email">
             <input type="password" name="password" class="form-input" placeholder="Пароль" required>
             <input type="password" name="passwordConfirm" class="form-input" placeholder="Повторите пароль">
 
             <button class="log-in" type="submit">Зарегистрироваться</button>
 
-            <div class="other">
+            <div>
                 <a href="/login"><button class="btn submits sign-up" type="button">Войти</button></a>
             </div>
 
