@@ -1,0 +1,69 @@
+.header {
+    width: auto;
+    height: 120px;
+    background: #4A5973;
+    display: flex;
+    align-items: center;
+}
+
+ul {
+list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+a:hover {
+    color: grey;
+}
+
+h1 {
+    text-align: center;
+}
+
+.header ul {
+    margin: 100px;
+    text-align: center;
+	font-size: 40px;
+}
+
+ul li {
+    display: inline;
+    padding: 20px;
+}
+
+.nav_buttons {
+    text-align: center;
+}
+
+.nav {
+    border: 0;
+    height: 100px;
+    width: 800px;
+    font-size: 25px;
+    background: #BA9A62;
+    border-radius: 10px;
+	margin: 20px;
+	color: white;
+	opacity: .85;
+}
+
+.nav:hover {
+    font-weight: bold;
+    transition: 0.1s;
+}
+
+body {
+    background-repeat: no-repeat;
+    background-position: right bottom 85%;
+    background-size: cover;
+    font-family: Helvetica;
+    background-image: url('/img/hotel.jpg');
+}
+
+
+
+
+

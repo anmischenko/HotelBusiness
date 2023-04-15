@@ -1,10 +1,35 @@
 <!DOCTYPE html>
-<html lang="en">
+<html xmlns:th="http://www.thymeleaf.org"
+      xmlns:sec="http://www.thymeleaf.org/thymeleaf-extras-springsecurity3">
 <head>
-    <meta charset="UTF-8">
-    <title>Title</title>
+  <meta charset="UTF-8">
+  <title>Home Page</title>
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-HOMEPAGE
+<head th:replace="header :: content"></head>
+
+<div class="main">
+
+  <h1>Панель заявок</h1>
+
+
+  <div class="nav_buttons">
+    <div class="send">
+      <a href="/send_application"><button class="nav" type="button">Отправить заявку</button></a>
+    </div>
+    <div class="applications">
+      <a href="/user_application"><button class="nav" type="button">Мои заявки</button></a>
+    </div>
+    <div class="admin" sec:authorize="hasRole('ROLE_ADMIN')">
+      <a href="/admin"><button class="nav" type="button">Панель администратора</button></a>
+    </div>
+  </div>
+  <!--       <div class="for-opers" sec:authorize="hasRole('ROLE_MANAGER')">
+             <a href="/process_application"><button class="nav" type="button">Обработать заявку</button></a>
+         </div>
+ -->
+
+</div>
 </body>
 </html>
